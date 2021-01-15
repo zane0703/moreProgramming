@@ -19,10 +19,11 @@
             x.innerHTML = "Geolocation is not supported by this browser.";
           }
         }
+        setInterval(getLocation,1000)
         function showPosition(position){
             latitudeSpan.textContent= position.coords.latitude 
            longitudeSpan.textContent= position.coords.longitude;
         }
-        </script>s
+        </script>
 </body>
 </html>
